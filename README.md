@@ -1,37 +1,43 @@
 # DVDFigures
 
+**3D engine on Pygame**
+
 **3D-движок на Pygame**
 
-![Демонстрация программы](screenshotfiles/demo.png)
+![Program demonstration / Демонстрация программы](screenshotfiles/demo.png)
 
-## Что это?
+## What is it? / Что это?
 
-Программа для просмотра и вращения 3D-фигур с возможностью морфинга (плавного превращения одной фигуры в другую).
+A program for viewing and rotating 3D shapes with the ability to morph.
 
-## Возможности
+Программа для просмотра и вращения 3D-фигур с возможностью морфинга.
 
-- 20+ 3D-фигур (куб, сфера, конус, тор, лента Мёбиуса и другие)
-- Плавное переключение между фигурами (морфинг)
-- DVD-режим (летающий логотип)
-- Регулировка скорости вращения и движения
-- Запись видео
+## Features / Возможности
 
-## Как запустить
+- 20+ 3D shapes / 20+ 3D-фигур
+- Smooth morphing / Плавный морфинг
+- DVD mode / DVD-режим
+- Adjustable speed / Регулировка скорости
+- Video recording / Запись видео
 
-1. Установи Python 3.8+
-2. Установи зависимости:  
+## How to run / Как запустить
+
+1. Install Python 3.8+ / Установи Python 3.8+
+2. Install dependencies / Установи зависимости:  
    `pip install pygame opencv-python numpy sounddevice scipy`
-3. Запусти:  
+3. Run / Запусти:  
    `python main.py`
 
-## Лицензия
+## License / Лицензия
 
 GNU GPL v3
 
-## Скачать
+## Download / Скачать
 
-Готовая сборка для Windows: **[dvdf.zip](https://github.com/madmenmadmen/dvdfigures/releases/tag/dvdfigures)**
+Ready-made Windows build / Готовая сборка для Windows: **[dvdf.zip](https://github.com/madmenmadmen/dvdfigures/releases/tag/dvdfigures)**
 
-## Другие мои проекты
+## My other projects / Другие мои проекты
+
+**💩 [Prosto Mod](https://github.com/madmenmadmen/prostomod)** — a mod for Minecraft Forge adding poop, energy, the Shrek dimension and automation.
 
 **💩 [Prosto Mod](https://github.com/madmenmadmen/prostomod)** — мод для Minecraft Forge, добавляющий какашки, энергию, измерение Шрека и автоматизацию.
