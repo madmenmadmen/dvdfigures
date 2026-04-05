@@ -27,3 +27,7 @@
 ## Лицензия
 
 GNU GPL v3
+
+## Другие мои проекты
+
+**💩 [Prosto Mod](https://github.com/madmenmadmen/prostomod)** — мод для Minecraft Forge, добавляющий какашки, энергию, измерение Шрека и автоматизацию.
