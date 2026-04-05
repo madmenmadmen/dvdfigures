@@ -28,6 +28,10 @@
 
 GNU GPL v3
 
+## Скачать
+
+Готовая сборка для Windows: **[dvdf.zip](https://github.com/madmenmadmen/dvdfigures/releases/tag/dvdfigures)**
+
 ## Другие мои проекты
 
 **💩 [Prosto Mod](https://github.com/madmenmadmen/prostomod)** — мод для Minecraft Forge, добавляющий какашки, энергию, измерение Шрека и автоматизацию.
