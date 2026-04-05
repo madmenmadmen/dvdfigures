@@ -1,6 +1,5 @@
 # main.py
 import sys
-from client import MultiplayerClient
 from events import handle_mouse_click, create_buttons, create_speed_slider, handle_multi_click
 from render import render_shape, render_shape_with_morph
 import math
@@ -146,9 +145,6 @@ from voice import VoiceController
 
 voice = VoiceController(game_state)
 game_state["voice"] = voice
-
-game_state["multiplayer"] = MultiplayerClient(game_state)
-game_state["multiplayer"].connect()
 
 # В main.py, после создания game_state добавьте:
 from game_system import Game
@@ -565,25 +561,6 @@ def check_aabb_collision(aabb1, aabb2):
 # Основной игровой цикл с исправлениями
 running = True
 while running:
-    # Проверяем, есть ли файл с комнатой
-    if os.path.exists("mp_room.txt") and not game_state.get("multiplayer_connected"):
-        with open("mp_room.txt", "r") as f:
-            lines = f.readlines()
-            room = lines[0].strip()
-            password = lines[1].strip()
-
-        # Проверяем, может клиент уже создан в окне мультиплеера?
-        if not game_state.get("multiplayer"):
-            print("🟡 СОЗДАЁМ КЛИЕНТА")
-            game_state["multiplayer"] = MultiplayerClient(game_state)
-            game_state["multiplayer"].connect()
-
-        # Используем существующий клиент
-        if game_state["multiplayer"].join_room(room, password):
-            print("✅ join_room() ВЕРНУЛ TRUE")
-            game_state["multiplayer_connected"] = True
-            os.remove("mp_room.txt")
-
     mouse_pos = pygame.mouse.get_pos()
     mouse_buttons = pygame.mouse.get_pressed()
 
